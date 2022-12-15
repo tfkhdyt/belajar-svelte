@@ -1,4 +1,29 @@
 <script lang="ts">
+	import GridTile from '$lib/GridTile.svelte';
+
+	let products = [
+		{
+			title: 'Mug',
+			cost: '$10',
+			src: '/path.png'
+		},
+		{
+			title: 'Shirt',
+			cost: '$10',
+			src: '/path.png'
+		}
+	];
+</script>
+
+<main>
+  {#each products as product (product.title)}
+    <GridTile />
+  {/each}
+</main>
+
+<!-- <script lang="ts">
+  import GridTile from "$lib/GridTile.svelte";
+
 	let products = [
 		{ name: 't-shirt', quantity: 10 },
 		{ name: 'mug', quantity: 30 },
@@ -18,7 +43,10 @@
 	<input type="checkbox" />
 	<div class="bg-blue-500 p-4">{i}</div>
 {/each}
-
+<GridTile />
+<GridTile />
+<GridTile />
+<GridTile /> -->
 
 <!-- <script lang="ts">
 	let product = {

@@ -27,7 +27,7 @@
 
 	<Counter />
 </section>
-
+<!-- 
 <style>
 	section {
 		display: flex;
@@ -56,4 +56,4 @@
 		top: 0;
 		display: block;
 	}
-</style>
+</style> -->
