@@ -16,8 +16,9 @@
 {#each products as product, i (product.name)}
 	<h3>{product.name}</h3>
 	<input type="checkbox" />
-	<div>{i}</div>
+	<div class="bg-blue-500 p-4">{i}</div>
 {/each}
+
 
 <!-- <script lang="ts">
 	let product = {
